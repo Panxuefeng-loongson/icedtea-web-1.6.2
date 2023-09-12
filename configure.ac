@@ -68,8 +68,7 @@ AC_SUBST(X11_LIBS)
 
 dnl PR46074 (gcc) - Missing java.net cookie code required by IcedTea plugin
 dnl IT563 - NetX uses sun.security code
-dnl IT605 - NetX depends on sun.misc HexDumpEncoder or sun.security.util.HexDumpEncoder
-dnl IT570 - NetX depends on sun.applet.AppletViewPanel
+dnl IT605 - NetX depends on sun.misc HexDumpEncoder or sun.security.util.HexDumpEncoder dnl IT570 - NetX depends on sun.applet.AppletViewPanel
 dnl IT571 - NetX depends on com.sun.net.ssl.internal.ssl.X509ExtendedTrustManager.java
 dnl IT573 - Plugin depends on sun.awt,X11.XEmbeddedFrame.java
 dnl IT575 - Plugin depends on com.sun/jndi.toolkit.url.UrlUtil

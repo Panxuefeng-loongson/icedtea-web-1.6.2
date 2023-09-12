@@ -365,7 +365,6 @@ $(PLUGIN_DIR)/$(BUILT_PLUGIN_LIBRARY): $(addprefix $(PLUGIN_DIR)/,$(PLUGIN_OBJEC
 	$(CXX) $(CXXFLAGS) \
 	  $(PLUGIN_OBJECTS) \
 	  $(GLIB_LIBS) \
-	  $(MOZILLA_LIBS) \
 	  -shared -o $@
 
 # Start of CPP Unit test targets
@@ -425,7 +424,6 @@ $(CPP_UNITTEST_EXECUTABLE): $(CPP_UNITTEST_FRAMEWORK_LIB) stamps/cpp-unit-tests-
 	  -lrt \
 	  -lpthread \
 	  $(GLIB_LIBS) \
-	  $(MOZILLA_LIBS) \
 	  $(CPP_UNITTEST_FRAMEWORK_LIB)\
 	  $(BUILT_CPP_UNIT_TEST_FRAMEWORK) -o $@
 
@@ -1300,7 +1298,6 @@ $(COVERABLE_PLUGIN_DIR)/$(BUILT_PLUGIN_LIBRARY): $(addprefix $(COVERABLE_PLUGIN_
 	$(CXX) $(CXXFLAGS) \
 	  $(PLUGIN_OBJECTS) \
 	  $(GLIB_LIBS) \
-	  $(MOZILLA_LIBS) \
 	  -shared -o $@
 
 stamps/build-fake-plugin.stamp:  $(COVERABLE_PLUGIN_DIR)  $(addprefix $(PLUGIN_SRCDIR)/,$(PLUGIN_SRC)) $(addprefix $(COVERABLE_PLUGIN_DIR)/,$(PLUGIN_OBJECTS)) stamps/liveconnect-dist.stamp  $(COVERABLE_PLUGIN_DIR)/$(BUILT_PLUGIN_LIBRARY)
